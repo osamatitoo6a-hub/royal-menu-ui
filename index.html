@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🍴 Royal Menu 🍽️</h1>
+
+    <div class="controls-container">
+        <input type="text" id="searchInput" placeholder="🔍 ابحث عن وجبتك المفضلة...">
+        
+        <div class="cart-box">
+            <div class="cart-icon-wrapper">
+                🛒
+                <span class="cart-badge" id="cartCount">0</span>
+            </div>
+            <div class="cart-info">
+                <span class="cart-label">Total</span>
+                <span class="cart-total"><span id="totalPrice">0</span> EGP</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <h2>🥘 Main Dishes</h2>
+
+        <div class="sub-category">
+            <h3>🥩 Meat Section</h3>
+            <div class="grid-container">
+                <div class="item"><img src="img/steek.jpg" alt="Grilled Steak"><p>Grilled Steak</p><span class="price">420 EGP</span></div>
+                <div class="item"><img src="img/لحم.jpg" alt="Meat with Sauce"><p>Meat with Sauce</p><span class="price">380 EGP</span></div>
+                <div class="item"><img src="img/reash.jpg" alt="Lamb Chops"><p>Lamb Chops</p><span class="price">490 EGP</span></div>
+                <div class="item"><img src="img/koftaa.jpg" alt="Grilled Kofta"><p>Grilled Kofta</p><span class="price">320 EGP</span></div>
+                <div class="item"><img src="img/tajeen.jpg" alt="Meat Casserole"><p>Meat Casserole</p><span class="price">350 EGP</span></div>
+            </div>
+        </div>
+
+        <div class="sub-category">
+            <h3>🍗 Chicken Section</h3>
+            <div class="grid-container">
+                <div class="item"><img src="img/chicken.jpg" alt="Grilled Chicken"><p>Grilled Chicken</p><span class="price">260 EGP</span></div>
+                <div class="item"><img src="img/shee.jpg" alt="Shish Taouk"><p>Shish Taouk</p><span class="price">270 EGP</span></div>
+                <div class="item"><img src="img/batee.jpg" alt="Chicken Pane"><p>Chicken Pane</p><span class="price">240 EGP</span></div>
+                <div class="item"><img src="img/sadr.jpg" alt="Grilled Chicken Breast"><p>Grilled Chicken Breast</p><span class="price">250 EGP</span></div>
+                <div class="item"><img src="img/wajba .jpg" alt="Chicken Meal"><p>Chicken Meal</p><span class="price">310 EGP</span></div>
+            </div>
+        </div>
+
+        <div class="sub-category">
+            <h3>🍕 Pizza Section</h3>
+            <div class="grid-container">
+                <div class="item"><img src="img/pizza.jpg" alt="Margherita"><p>Margherita</p><span class="price">190 EGP</span></div>
+                <div class="item"><img src="img/pizsup.jpg" alt="Supreme"><p>Supreme</p><span class="price">280 EGP</span></div>
+                <div class="item"><img src="img/pizaaa.jpg" alt="Pepperoni"><p>Pepperoni</p><span class="price">250 EGP</span></div>
+                <div class="item"><img src="img/salame.jpg" alt="Salamy"><p>Salamy</p><span class="price">260 EGP</span></div>
+                <div class="item"><img src="img/kohdrwat.jpg" alt="Vegetables"><p>Vegetables</p><span class="price">180 EGP</span></div>
+            </div>
+        </div>
+
+        <div class="sub-category">
+            <h3>🍔 Burger & Sandwiches</h3>
+            <div class="grid-container">
+                <div class="item"><img src="img/burger.jpg" alt="Classic Burger"><p>Classic Burger</p><span class="price">175 EGP</span></div>
+                <div class="item"><img src="img/cheese.jpg" alt="Cheese Burger"><p>Cheese Burger</p><span class="price">195 EGP</span></div>
+                <div class="item"><img src="img/برجحر.jpg" alt="Chicken Burger"><p>Chicken Burger</p><span class="price">165 EGP</span></div>
+                <div class="item"><img src="img/كرسبي.jpg" alt="Crispy Sandwich"><p>Crispy Sandwich</p><span class="price">150 EGP</span></div>
+                <div class="item"><img src="img/فاهيتا.jpg" alt="Fajita Sandwich"><p>Fajita Sandwich</p><span class="price">180 EGP</span></div>
+            </div>
+        </div>
+
+        <div class="sub-category">
+            <h3>🥗 Salads & Soups</h3>
+            <div class="grid-container">
+                <div class="item"><img src="img/سلطة.jpg" alt="Caesar Salad"><p>Caesar Salad</p><span class="price">120 EGP</span></div>
+                <div class="item"><img src="img/خضار.jpg" alt="Fresh Green Salad"><p>Fresh Green Salad</p><span class="price">65 EGP</span></div>
+                <div class="item"><img src="img/شوربة.jpg" alt="Creamy Chicken Soup"><p>Creamy Chicken Soup</p><span class="price">95 EGP</span></div>
+                <div class="item"><img src="img/عدس.jpg" alt="Lentil Soup"><p>Lentil Soup</p><span class="price">75 EGP</span></div>
+                <div class="item"><img src="img/لسان عصفور.jpg" alt="Orzo Soup"><p>Orzo Soup</p><span class="price">65 EGP</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <h2>🍟 Appetizers & Sides</h2>
+        <div class="grid-container">
+            <div class="item"><img src="img/botato.jpg" alt="French Fries"><p>French Fries</p><span class="price">60 EGP</span></div>
+            <div class="item"><img src="img/salad.jpg" alt="Coleslaw"><p>Coleslaw</p><span class="price">55 EGP</span></div>
+            <div class="item"><img src="img/rice.jpg" alt="Basmati Rice"><p>Basmati Rice</p><span class="price">50 EGP</span></div>
+            <div class="item"><img src="img/tommy.jpg" alt="Garlic Sauce"><p>Garlic Sauce</p><span class="price">40 EGP</span></div>
+            <div class="item"><img src="img/bread.jpg" alt="Garlic Bread"><p>Garlic Bread</p><span class="price">45 EGP</span></div>
+        </div>
+
+        <div class="sub-category">
+            <h3>🍯 Extra Dips & Sauces</h3>
+            <div class="grid-container">
+                <div class="item"><img src="img/صوص.jpg" alt="BBQ Sauce"><p>BBQ Sauce</p><span class="price">35 EGP</span></div>
+                <div class="item"><img src="img/جبنه.jpg" alt="Melted Cheddar"><p>Melted Cheddar</p><span class="price">45 EGP</span></div>
+                <div class="item"><img src="img/رانش.jpg" alt="Ranch Sauce"><p>Ranch Sauce</p><span class="price">35 EGP</span></div>
+                <div class="item"><img src="img/حار.jpg" alt="Spicy Mayo"><p>Spicy Mayo</p><span class="price">35 EGP</span></div>
+                <div class="item"><img src="img/كاتشب.jpg" alt="Ketchup & Mustard"><p>Ketchup & Mustard</p><span class="price">25 EGP</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <h2>🥤 Cold Drinks</h2>
+        <div class="grid-container">
+            <div class="item"><img src="img/por.jpg" alt="Orange Juice"><p>Orange Juice</p><span class="price">75 EGP</span></div>
+            <div class="item"><img src="img/lemion.jpg" alt="Lemon Mint"><p>Lemon Mint</p><span class="price">70 EGP</span></div>
+            <div class="item"><img src="img/Mo.jpg" alt="Blue Mojito"><p>Blue Mojito</p><span class="price">105 EGP</span></div>
+            <div class="item"><img src="img/ca.jpg" alt="Carbonated Drink"><p>Carbonated Drink</p><span class="price">45 EGP</span></div>
+            <div class="item"><img src="img/Water.jpg" alt="Mineral Water"><p>Mineral Water</p><span class="price">25 EGP</span></div>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <h2>🍰 Desserts</h2>
+        <div class="grid-container">
+            <div class="item"><img src="img/chocolata.jpg" alt="Chocolate Cake"><p>Chocolate Cake</p><span class="price">140 EGP</span></div>
+            <div class="item"><img src="img/basbosa.jpg" alt="Basbousa"><p>Basbousa</p><span class="price">90 EGP</span></div>
+            <div class="item"><img src="img/konafa.jpg" alt="Nabulsi Konafa"><p>Nabulsi Konafa</p><span class="price">120 EGP</span></div>
+            <div class="item"><img src="img/ice.jpg" alt="Ice Cream"><p>Ice Cream</p><span class="price">65 EGP</span></div>
+            <div class="item"><img src="img/foaceh.jpg" alt="Fruit Salad"><p>Fruit Salad</p><span class="price">95 EGP</span></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
