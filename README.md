@@ -29,4 +29,4 @@ An interactive, responsive, and modern web-based restaurant menu designed for se
 ---
 
 ## 🚀 Live Demo
-👉 **[Click Here to Open Royal Menu Live Demo](https://osamatitoo6a-hub.github.io/restaurant-menu-ui/)**
+👉 **[Click Here to Open Royal Menu Live Demo](https://osamatitoo6a-hub.github.io/resturant-website-royal-menu-ui/)**
