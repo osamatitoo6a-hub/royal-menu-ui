@@ -35,7 +35,7 @@ h1 {
     outline: none;
 }
 
-/* تصميم السلة الجديد مطابق للصورة */
+/* تصميم السلة */
 .cart-box {
     background-color: #252830;
     border: 1px solid #383e4d;
@@ -45,7 +45,7 @@ h1 {
     align-items: center;
     gap: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    direction: ltr; /* لضمان ترتيب الأيقونة ثم النص يساراً ويميناً */
+    direction: ltr;
 }
 
 .cart-icon-wrapper {
@@ -159,6 +159,13 @@ h2 {
     font-size: 1.3em;
 }
 
-@media (max-width: 1024px) { .grid-container { grid-template-columns: repeat(3, 1fr); } }
-@media (max-width: 768px) { .grid-container { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 480px) { .grid-container { grid-template-columns: 1fr; } }
+/* التجاوب المعدل للموبايل والتابلت */
+@media (max-width: 1024px) { 
+    .grid-container { grid-template-columns: repeat(3, 1fr); } 
+}
+@media (max-width: 768px) { 
+    .grid-container { grid-template-columns: repeat(2, 1fr); gap: 12px; } 
+    .menu-section { padding: 15px; }
+    .item { padding: 10px; }
+    .item img { height: 110px; }
+}
