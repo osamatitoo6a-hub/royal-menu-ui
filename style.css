@@ -159,26 +159,42 @@ h2 {
     font-size: 1.3em;
 }
 
-/* التجاوب المعدل للموبايل والتابلت */
+/* تنسيق الموبايل على شكل صفوف (Horizontal Rows) */
 @media screen and (max-width: 768px) {
     .grid-container { 
-        display: grid !important; 
-        grid-template-columns: repeat(2, 1fr) !important; /* تجبر الشاشة على عرض كارتين بجانب بعض */
-        gap: 10px !important; 
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important; 
     }
+
     .menu-section { 
-        padding: 12px !important; 
+        padding: 15px 10px !important; 
     }
+
     .item { 
-        padding: 8px !important; 
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        text-align: right !important;
+        padding: 10px 15px !important;
+        gap: 15px !important;
     }
+
     .item img { 
-        height: 100px !important; 
+        width: 80px !important; 
+        height: 80px !important; 
+        border-radius: 10px !important;
+        flex-shrink: 0 !important;
     }
+
     .item p { 
-        font-size: 0.9em !important; 
-    }
-    .price { 
         font-size: 1em !important; 
+        margin: 0 0 5px 0 !important;
+        flex: 1 !important;
+    }
+
+    .price { 
+        font-size: 1.1em !important; 
+        white-space: nowrap !important;
     }
 }
